@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.links {
+  position: absolute;
+  width: 8rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .line {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: $gray;
+    left: 50%;
+    z-index: 0;
+  }
+  .links-list {
+    display: flex;
+    flex-direction: column;
+    .link {
+      fill: $gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.75rem;
+      height: 1.75rem;
+      // padding: 0.25rem;
+      border-radius: 50%;
+      background: $black;
+      transition: $transition;
+      border: 1px solid $gray;
+      z-index: 1;
+      .icon {
+        width: 50%;
+      }
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+      &:hover {
+        fill: $white;
+      }
+    }
+  }
+}

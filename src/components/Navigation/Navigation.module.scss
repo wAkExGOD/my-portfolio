@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.navigation {
+  .item {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.5rem;
+    will-change: transform;
+    &.active {
+      // text-shadow: 0 0 6px #6e6e6e;
+      .line {
+        width: 2.5rem;
+      }
+    }
+    .line {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1px;
+      margin: 0 1rem;
+      background: $white;
+      transition: $transition;
+    }
+    .title {
+      line-height: 1;
+      transition: $transition;
+    }
+    &:hover {
+      .line {
+        width: 2.5rem;
+      }
+    }
+    &:active {
+      .line {
+        width: 1rem;
+      }
+    }
+  }
+}

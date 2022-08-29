@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.main-block-container {
+  display: none;
+  height: 100%;
+  width: 100%;
+  transition: $transition;
+  opacity: 0;
+  &.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation-name: show;
+    animation-duration: 0.5s;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

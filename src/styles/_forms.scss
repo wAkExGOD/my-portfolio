@@ -1,0 +1,57 @@
+@import './variables';
+
+// form {
+//   input,
+//   select,
+//   textarea {
+//     border: none;
+//     color: black;
+//     // outline: 1px solid $light-blue;
+//     padding: 1rem;
+//     line-height: 2;
+//     border-radius: 0.25rem;
+//     background: #e9f5ff;
+//   }
+//   .title {
+//     text-align: center;
+//     margin-bottom: 1.5em;
+//   }
+
+//   .error-text {
+//     color: red;
+//     line-height: 2;
+//     cursor: initial;
+//   }
+//   > *:not(:last-child) {
+//     margin-bottom: 1.25rem;
+//   }
+//   label {
+//     display: flex;
+//     flex-direction: column;
+//     .label-name {
+//       margin-bottom: 0.5rem;
+//     }
+//   }
+//   [type='submit'] {
+//     cursor: pointer;
+//     display: block;
+//     margin-left: auto;
+//     background: $light-blue;
+//     color: white;
+//     &:focus {
+//       background: $blue;
+//     }
+//     &:disabled {
+//       color: rgba(0, 0, 0, 0.26);
+//       box-shadow: none;
+//       background-color: rgba(0, 0, 0, 0.12);
+//       // pointer-events: none;
+//       cursor: default;
+//     }
+//   }
+//   &.loading {
+//     opacity: .5;
+//     pointer-events: none;
+//     cursor: default;
+//   }
+// }

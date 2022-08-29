@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .curr {
+    color: $gray;
+  }
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.5rem;
+    margin: 0 0.75rem;
+    border-radius: 50%;
+    border: 1px solid $gray;
+    transition: $transition;
+    cursor: pointer;
+    // padding: 1rem;
+    &.disabled {
+      // pointer-events: none;
+      cursor: not-allowed;
+      opacity: .5;
+    }
+    &.next {
+      transform: rotate(180deg);
+    }
+  }
+  .curr {
+
+  }
+}
